@@ -2,18 +2,18 @@
 
     <header>
         <h1>
-            Counter
+            {{title}}
         </h1>
     </header>
 
     <main>
         <h2>
-            Current count is :0
+            Current count is : {{count}}
         </h2>
     </main>
-    <button>Reset Count</button>
-    <button>Increase Count</button>
-    <button>Decrese Count</button>
+    <button (click)="resetCount()">Reset Count</button>
+    <button (click)="handleIncrease()">Increase Count</button>
+    <button (click)="handleDecrease()">Decrese Count</button>
 
 
 </div>
